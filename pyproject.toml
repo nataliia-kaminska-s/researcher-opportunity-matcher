@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "grant-harvester"
+version = "0.1.0"
+description = "Prototype connectors and harvesters for Ukrainian grants"
+authors = ["Your Name <you@example.org>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.28"
+beautifulsoup4 = "^4.12"
+lxml = "^4.9"
+
+[[tool.poetry.packages]]
+include = "backend"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
